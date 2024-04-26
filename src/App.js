@@ -39,8 +39,8 @@ const App = () => {
     console.log(`Added ${item.title} into the cart.`)
   }
 
-  const removeFromCart = (item) => {
-    setCart([element.remove, item])
+  const removeFromCart = (itemRemove) => {
+    setCart(cart.filter(item => item !== itemRemove))
     console.log(`removed ${item.title} from cart`)
   }
 

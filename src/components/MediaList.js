@@ -21,7 +21,7 @@
 import React from "react";
 import MediaItem from "./MediaItem";
 
-const mediaList = ({mediaItems, addToCart}) => {
+const mediaList = ({mediaItems, addToCart, removeFromCart}) => {
 return(
   <div>
     {mediaItems.map(item => (
